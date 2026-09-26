@@ -3,14 +3,27 @@
     // Entry method for the execution of the code
     public static void Main()
     {
-        Console.WriteLine("Welcome in the BibbyFlex library");
+        
+
+        Console.WriteLine("Insert client name");
+
+        // Console.ReadLine() allow me to read the user's input frome the console
+        // After that, I can assign the value to a clientName
+        string clientName = Console.ReadLine(); // dichiarazione + assegnazione
+
+        Console.WriteLine($"Welcome,{clientName}, in the BibbyFlex library");
+        
+        Console.WriteLine("Insert he delivery type");
+
+        string deliveryType = Console.ReadLine(); // dichiarazione + assegnazione
+
+        Console.WriteLine("Insert the number of buought package");
+
+        int packageNumber = int.Parse(Console.ReadLine());
+
 
         int singlePackageDeliveryCost = 5; // Declaration
         singlePackageDeliveryCost = 10; // Allocation
-
-        int packageNumber = 2;
-
-        string deliveryType = "Standard"; // Declaratiom
 
         int totalCost = singlePackageDeliveryCost * packageNumber;
 
