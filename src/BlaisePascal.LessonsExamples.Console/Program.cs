@@ -1,4 +1,7 @@
-﻿public class Program //This is a class
+﻿using BlaisePascal.LessonsExamples.Domain;
+using System.Security.Cryptography.X509Certificates;
+
+public class Program //This is a class
 {
     // Entry method for the execution of the code
     public static void Main()
@@ -32,5 +35,8 @@
         // che permette di inserire variabili all'interno di una stringa di messaggio
         Console.WriteLine($"The selected delivery type is: {deliveryType} and the total cost is: {totalCost}");
 
+
+        // Ho bisogno di un costruttore pubblico per poter creare un oggetto di tipo Enemy
+        Enemy newEnemy = new Enemy(); // Istanza della classe enemy
     }
 }
