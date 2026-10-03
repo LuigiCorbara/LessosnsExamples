@@ -1,4 +1,5 @@
-﻿using BlaisePascal.LessonsExamples.Domain;
+﻿/*
+using BlaisePascal.LessonsExamples.Domain;
 using System.Security.Cryptography.X509Certificates;
 
 public class Program //This is a class
@@ -6,7 +7,7 @@ public class Program //This is a class
     // Entry method for the execution of the code
     public static void Main()
     {
-        
+
 
         Console.WriteLine("Insert client name");
 
@@ -15,7 +16,7 @@ public class Program //This is a class
         string clientName = Console.ReadLine(); // dichiarazione + assegnazione
 
         Console.WriteLine($"Welcome,{clientName}, in the BibbyFlex library");
-        
+
         Console.WriteLine("Insert he delivery type");
 
         string deliveryType = Console.ReadLine(); // dichiarazione + assegnazione
@@ -38,5 +39,7 @@ public class Program //This is a class
 
         // Ho bisogno di un costruttore pubblico per poter creare un oggetto di tipo Enemy
         Enemy newEnemy = new Enemy(); // Istanza della classe enemy
+
     }
 }
+*/
