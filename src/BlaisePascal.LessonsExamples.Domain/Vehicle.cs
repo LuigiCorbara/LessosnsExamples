@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace BlaisePascal.LessonsExamples.Domain
 {
     public class Vehicle
@@ -18,7 +19,7 @@ namespace BlaisePascal.LessonsExamples.Domain
             { return _odometerKm; }
             private set
             {
-                if (value < 0) throw new ArgumentExeption("illegal value");
+                if (value < 0) throw new Exception("illegal value");
 
                 _odometerKm = value;
             }
@@ -28,11 +29,11 @@ namespace BlaisePascal.LessonsExamples.Domain
 
         public double FuelLevelPercentage { get; private set; }
 
-        public Vehicle(string licensePlate) 
+        public Vehicle(string licensePlate)   // Overload costruttore
         {
             LicensePlate = licensePlate; // Chiamata al private set
         }
-        // Overload costruttore
+      
 
         public Vehicle(string licensePlate, int odometerKm, double dailyRate, double fuelLevelPercentage)
         {
