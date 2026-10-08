@@ -19,7 +19,8 @@ namespace BlaisePascal.LessonsExamples.Domain
             { return _odometerKm; }
             private set
             {
-                if (value < 0) throw new Exception("illegal value");
+                if (value < 0)
+                    throw new Exception($"Value not allowed {nameof(OdomedterKm)}");
 
                 _odometerKm = value;
             }
@@ -37,7 +38,23 @@ namespace BlaisePascal.LessonsExamples.Domain
 
         public Vehicle(string licensePlate, int odometerKm, double dailyRate, double fuelLevelPercentage)
         {
+            LicensePlate = licensePlate;
+            OdometerKm = odometerKm;
+            DailyRate = dailyRate;
+            FuelLevelPercentage = fuelLevelPercentage;
+        }
 
+        public void RegisterData(int consumedKm, double consumedFuel) 
+        {
+            //controlli sui parametri
+            if (consumedKm <= 0)
+                throw new Exception($"value not allowed {nameof(consumedKm)} : {consumedKm}");
+            if (consumedFuel <= 0)
+                throw new Exception($"value not allowed {nameof(consumedFuel)} : {consumedFuel}");
+
+            //aggiorno i valori
+            OdometerKm += consumedKm; //chiamata al set
+            FuelLevelPercentage -= consumedFuel; //chiamata al set
         }
         
     }

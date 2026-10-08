@@ -1,4 +1,4 @@
-﻿using BlaisePascal.LessonsExamples.Domain;
+﻿/*using BlaisePascal.LessonsExamples.Domain;
 
 public class Program
 { 
@@ -11,3 +11,4 @@ public class Program
     }
 }
 
+*/
