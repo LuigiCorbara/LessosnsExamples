@@ -20,7 +20,7 @@ namespace BlaisePascal.LessonsExamples.Domain
             private set
             {
                 if (value < 0)
-                    throw new Exception($"Value not allowed {nameof(OdomedterKm)}");
+                    throw new Exception($"Value not allowed {nameof(_odometerKm)}");
 
                 _odometerKm = value;
             }

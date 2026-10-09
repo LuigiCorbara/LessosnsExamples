@@ -1,14 +1,15 @@
-﻿/*using BlaisePascal.LessonsExamples.Domain;
+﻿using BlaisePascal.LessonsExamples.Domain;
+using static System.Console;
 
 public class Program
 { 
     static void Main(string[] args)
     {
-        Enemy newEnemy = new Enemy();
-        newEnemy.setHealth(10);
-        Console.WriteLine("Enemy Health: " + newEnemy.Health);
-        Console.WriteLine("Is Enemy Alive? " + newEnemy.isAlive());
+        Enemy enemy = new Enemy("Goblin", 10, 3);
+        WriteLine($"{nameof(enemy)} max health is {enemy.Health}");
+        enemy.TakeDamage(25);
+        WriteLine("Enemy's health after attack is: " + enemy.Health);
+        WriteLine("Is Enemy Alive? " + enemy.IsAlive());
     }
 }
 
-*/

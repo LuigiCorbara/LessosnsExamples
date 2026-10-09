@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace BlaisePascal.LessonsExamples.Domain
+﻿namespace BlaisePascal.LessonsExamples.Domain
 {
     public class Enemy
     {
@@ -32,7 +30,7 @@ namespace BlaisePascal.LessonsExamples.Domain
             }
         }
 
-        public int Damage { get; private set }
+        public int Damage { get; private set; }
 
         //costruttore
         public Enemy(string name, int health, int damage)
