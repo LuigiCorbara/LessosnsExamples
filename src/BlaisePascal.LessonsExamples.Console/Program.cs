@@ -13,7 +13,7 @@
 
         Console.WriteLine($"Welcome,{clientName}, in the BibbyFlex library");
         
-        Console.WriteLine("Insert he delivery type");
+        Console.WriteLine("Insert the delivery type");
 
         string deliveryType = Console.ReadLine(); // dichiarazione + assegnazione
 
